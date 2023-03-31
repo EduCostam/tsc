@@ -41,6 +41,19 @@ console.log(livro);
 
 // => Exemplo 03: Interface com Propriedades de Somente Leitura e Opcionais
 
+interface Carro {
+  readonly modelo: string;
+  ano: number;
+  valor?: number;
+}
+
+const carro: Carro = {
+  modelo: 'Fusca',
+  ano: 1969,
+};
+
+console.log(carro);
+
 // => Exemplo 04: Interface com implements Class
 
 // => Exemplo 05: Interface vs Type Alias
