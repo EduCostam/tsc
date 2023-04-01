@@ -82,4 +82,4 @@ const gato = new Gato('Totó', 10, true);
 console.log(gato);
 gato.comer('Ração');
 
-// => Exemplo 05: Interface vs Type Alias
+// => Exemplo 05: Interface vs Alias Type
