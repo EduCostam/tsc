@@ -56,4 +56,11 @@ console.log(carro);
 
 // => Exemplo 04: Interface com implements Class
 
+interface IAnimal {
+  nome: string;
+  idade: number;
+  estaVivo: boolean;
+  comer(tipoComida: string): void;
+}
+
 // => Exemplo 05: Interface vs Type Alias
