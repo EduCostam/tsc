@@ -83,3 +83,15 @@ console.log(gato);
 gato.comer('Ração');
 
 // => Exemplo 05: Interface vs Alias Type
+
+interface Pessoa_02 {
+  nome: string;
+  sobrenome: string;
+  idade: number;
+}
+
+type Pessoa_03 = {
+  nome: string;
+  sobrenome: string;
+  idade: number;
+};
