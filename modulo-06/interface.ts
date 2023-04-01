@@ -74,8 +74,12 @@ class Gato implements IAnimal {
     this.estaVivo = estaVivo;
   }
   comer(tipoComida: string): void {
-    throw new Error('Method not implemented.');
+    console.log(`O gato ${this.nome} está comendo ${tipoComida}`);
   }
 }
+
+const gato = new Gato('Totó', 10, true);
+console.log(gato);
+gato.comer('Ração');
 
 // => Exemplo 05: Interface vs Type Alias
