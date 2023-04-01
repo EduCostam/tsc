@@ -63,4 +63,19 @@ interface IAnimal {
   comer(tipoComida: string): void;
 }
 
+class Gato implements IAnimal {
+  nome: string;
+  idade: number;
+  estaVivo: boolean;
+
+  constructor(nome: string, idade: number, estaVivo: boolean) {
+    this.nome = nome;
+    this.idade = idade;
+    this.estaVivo = estaVivo;
+  }
+  comer(tipoComida: string): void {
+    throw new Error('Method not implemented.');
+  }
+}
+
 // => Exemplo 05: Interface vs Type Alias
