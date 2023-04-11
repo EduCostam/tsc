@@ -7,7 +7,7 @@ interface Animal {
   porte: string;
 }
 
-interface Cachorro extends Animal {
+interface Gato extends Animal {
   raca: string;
 }
 
