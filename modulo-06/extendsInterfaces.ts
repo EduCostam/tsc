@@ -41,3 +41,11 @@ const animal: Animal = {
 console.log(animal);
 
 // => Exemplo 03 - Uso do Omit
+
+interface Funcionario {
+  id: number;
+  nome: string;
+  salario: number;
+}
+
+interface Desenvolvedor extends Omit<Funcionario, 'id'> {}
