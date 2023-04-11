@@ -11,6 +11,10 @@ interface Cachorro extends Animal {
   raca: string;
 }
 
+interface Cachorro extends Animal {
+  raca: string;
+}
+
 const cachorro: Cachorro = {
   nome: 'Alface',
   idade: 7,
@@ -20,6 +24,4 @@ const cachorro: Cachorro = {
 
 console.log(cachorro);
 
-// => Exemplo 02 - Extensão de Múltiplas Interfaces
-
-// => Exemplo 03 - Uso do Omit
+// => Exemplo 02 - Uso do Omit
