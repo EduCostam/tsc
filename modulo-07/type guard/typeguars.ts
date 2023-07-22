@@ -1,4 +1,4 @@
-exports = {};
+const exports = {};
 
 // => Exemplo 01 - Type Guards: typeof
 type alfanumerico = string | number;
