@@ -1,4 +1,4 @@
-const exports = {};
+
 
 // => Exemplo 01 - Type Guards: typeof
 type alfanumerico = string | number;
@@ -57,3 +57,48 @@ const moto = new Moto('CBR', 2020);
 console.log(detalhesVeiculo(moto));
 
 // => Exemplo 03 - Type Guards: in
+interface Animal_05 {
+  grupo: string;
+}
+
+class Peixe implements Animal_05 {
+  grupo: string;
+  corPeixe: string;
+
+  constructor(grupo: string, corPeixe: string) {
+    this.grupo = grupo;
+    this.corPeixe = corPeixe;
+  }
+}
+
+class Passaro implements Animal_05 {
+  grupo: string;
+  corPena: string;
+
+  constructor(grupo: string, corPena: string) {
+    this.grupo = grupo;
+    this.corPena = corPena;
+  }
+}
+
+function nadar(grupo: string) {
+  console.log(`o ${grupo} está nadando...`);
+}
+
+function voar(grupo: string) {
+  console.log(`o ${grupo} está voando...`);
+}
+
+function mover(animal: Animal_05) {
+  if ('corPeixe' in animal) {
+    nadar((animal as Peixe).grupo);
+  } else if ('corPena' in animal) {
+    voar((animal as Passaro).grupo);
+  }
+}
+
+const peixe = new Peixe('Peixe', 'Azul');
+const passaro = new Passaro('Pássaro', 'Branco');
+
+mover(peixe);
+mover(passaro);
